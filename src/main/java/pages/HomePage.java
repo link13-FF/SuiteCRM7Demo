@@ -1,9 +1,11 @@
 package pages;
 import io.qameta.allure.Step;
+import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+@Log4j2
 public class HomePage extends BasePage {
 
     public HomePage(WebDriver driver) {
@@ -16,14 +18,14 @@ public class HomePage extends BasePage {
 
     @Override
     public HomePage isPageOpened() {
-        //log.info("Page '{}' opening check", MAIN_URL + PAGE_URL);
+        log.info("Page '{}' opening check", BASE_URL + HOME_URL);
         wait.until(ExpectedConditions.visibilityOfElementLocated(HOME_TITLE));
         return this;
     }
 
     @Override
     public HomePage open() {
-        //log.info("Page '{}' opening", MAIN_URL + PAGE_URL);
+        log.info("Page '{}' opening", BASE_URL + HOME_URL);
         driver.get(BASE_URL + HOME_URL);
         return this;
     }
