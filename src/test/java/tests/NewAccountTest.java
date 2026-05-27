@@ -2,7 +2,7 @@ package tests;
 import dto.Account;
 import dto.AccountFactory;
 import dto.User;
-import tests.base.BaseTest;
+import base.BaseTest;
 import org.testng.annotations.Test;
 
 

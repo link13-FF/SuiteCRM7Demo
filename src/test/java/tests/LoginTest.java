@@ -1,6 +1,6 @@
 package tests;
 import dto.User;
-import tests.base.BaseTest;
+import base.BaseTest;
 import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTest {

@@ -4,7 +4,7 @@ import dto.Contact;
 import dto.ContactFactory;
 import dto.User;
 import org.testng.annotations.Test;
-import tests.base.BaseTest;
+import base.BaseTest;
 
 public class NewContactTest extends BaseTest {
 
