@@ -31,7 +31,7 @@ public class NewAccountTest extends BaseTest {
 
     @Test
     public void addNewAccount() {
-        loginStep.auth(User.will());
+        loginStep.auth(user, password);
         newAccountStep.addNewAccount(account2);
     }
 

@@ -15,11 +15,6 @@ public class LoginStep {
         loginPage = new LoginPage(driver);
     }
 
-    public HomePage auth(User user) {
-        loginPage.open()
-                .isPageOpened()
-                .login(user)
-                .isPageOpened();
-        return new HomePage(driver);
+    public void auth(String user, String password) {
     }
 }

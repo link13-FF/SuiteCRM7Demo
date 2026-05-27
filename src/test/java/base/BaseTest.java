@@ -26,6 +26,8 @@ public class BaseTest {
     protected NewAccountStep newAccountStep;
     protected ContactStep ContactStep;
 
+    protected String user = System.getProperty("user");
+    protected String password = System.getProperty("password");
 
     @Parameters({"browser"})
     @BeforeMethod(alwaysRun = true, description = "Настройка браузера")

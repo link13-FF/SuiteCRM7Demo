@@ -7,6 +7,6 @@ public class LoginTest extends BaseTest {
 
     @Test
     public void loginTest() {
-         loginStep.auth(User.will());
+         loginStep.auth(user, password);
     }
 }

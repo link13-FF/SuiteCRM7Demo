@@ -12,7 +12,7 @@ public class NewContactTest extends BaseTest {
 
     @Test
     public void addNewContact() {
-        loginStep.auth(User.will());
+        loginStep.auth(user, password);
         ContactStep.addNewContact(contact);
     }
 }
